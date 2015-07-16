@@ -19,16 +19,18 @@ Zenvia.username = 'xico_mineiro';
 var args = {
   to: "551199999999",
   msg: "Teste " + Date.now()
-};
+}; 
 
 var response = Zenvia.send(args);
+```
 
-//or
+or
 
+```javascript
 Zenvia.send(args, function(response) {
   console.log(response.error);
   console.log(response.body);
 });
 ```
 
-> [http://docs.zenviasms.apiary.io/#introduction/]()
+> [http://docs.zenviasms.apiary.io/#introduction/](http://docs.zenviasms.apiary.io/#introduction/)
